@@ -6,7 +6,7 @@ const humanCatDogYears = number => {
   const catYear3Plus = (number - 2) * 4;
   const dogYear3Plus = (number - 2) * 5;
 
-  // variables for calculating the sum of cat and dog years with year 1 + year 2 + year  3 plus
+  // variables for calculating the sum of cat and doge years with year 1 + year 2 + year  3 plus
   const catYears = year1and2 + catYear3Plus;
   const dogYears = year1and2 + dogYear3Plus;
 
