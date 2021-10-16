@@ -15,14 +15,14 @@ const humanCatDogYears = number => {
 };
 
 // REFACTORED VERSION!
-const humanCatDogYears = number => {
-    // variables for calculating the sum of cat and doge years with year 1 + year 2 + year  3 plus
-    const catYears = ((15 +9) + (number - 2)*4) 
-    const dogYears = ((15 +9) + (number - 2)*5) 
+// const humanCatDogYears = number => {
+//     // variables for calculating the sum of cat and doge years with year 1 + year 2 + year  3 plus
+//     const catYears = ((15 +9) + (number - 2)*4) 
+//     const dogYears = ((15 +9) + (number - 2)*5) 
   
-    // returns number(parameter), and variables catYears and dogYears in an array
-    return [number, catYears, dogYears];
-  };
+//     // returns number(parameter), and variables catYears and dogYears in an array
+//     return [number, catYears, dogYears];
+//   };
 
 
 
