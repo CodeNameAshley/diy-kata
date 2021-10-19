@@ -8,9 +8,9 @@
 // REFACTORED VERSION
 
 const reachDestination = (distance, speed) => {
-    const calc = Math.round((distance / speed) / 0.5) * 0.5;
-  
-    return `I should be there in ${calc} hours.`;
-  };
+  const calc = Math.round(distance / speed / 0.5) * 0.5;
+
+  return `I should be there in ${calc} hours.`;
+};
 
 module.exports = reachDestination;
