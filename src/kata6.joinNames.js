@@ -1,8 +1,17 @@
-const joinNames = namesObj => {
-  // //return simps.filter(x => x.name).map(x => x.name).join([separator = ', '])
+const joinNames = (namesObj) => {
+  const separator = ", ";
+  const and = " & ";
+  let simpsons = [];
 
-  // returns  "[object Object], [object Object] & [object Object]"
-  return `${namesObj.slice(0, -1).join(", ")} & ${namesObj.slice(-1)}`;
+  for (let i = 0; i < namesObj.length; i += 1) {
+    simpsons += namesObj[i].name;
+    if (i === namesObj.length - 2) {
+      simpsons += and;
+    } else if (i !== namesObj.length - 2 && i !== namesObj.length - 1) {
+      simpsons += separator;
+    }
+  }
+  return simpsons;
 };
 
 module.exports = joinNames;
